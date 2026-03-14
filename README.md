@@ -7,12 +7,17 @@ AlphaLab, Alpha实验室(AlphaClaw)。
 AlphaLab愿景：用前沿技术让投资更稳健。
 
 金融是离钱最近，信息直接可以转化为钱的行业。
+
 金融行业数据多，无论是结构化数据还是非结构化数据。
+
 金融是信息直接可以转化为收益的行业。
+
 金融投资领域是高度信息密集型，而且信息相对结构化，照理讲是最适合机器计算的领域。可是，当前投资仍然处于“刀耕火种”的年代，有人忙于调研，读报表；有人忙于盯盘，画线条。
 
 大模型和智能体技术快速发展。
+
 OpenClaw席卷全球。
+
 尽管金融数据低“信噪比”，也不要指望打造一台永动机。
 
 但请相信一句话就是：
@@ -38,24 +43,16 @@ No man is better than a machine, but no machine is better than a man with a mach
 ## 我们在做什么？
 
 **智能驱动** 引入Openclawy智能体技术，可以轻松扩展各种投资skills。
-市场智能分析
-因子挖掘
-策略构建
-策略优化
-策略回测
-策略实盘
+- 市场智能分析
+- 因子挖掘
+- 策略构建
+- 策略优化
+- 策略回测
+- 策略实盘
 
 ## 如何使用？
 
 
-AI量化投资实验室，专注将前沿人工智能技术(机器学习、深度学习、强化学习、遗传算法、图计算、知识图谱等)应用于金融量化投资。
-
-
-alphago master登顶围棋之巅都过去五年之久了，算法、算力日新月异的发展，不应该是当前这个样子。
-
-
-
-![图片](https://gitee.com/ailabx/ailabx/raw/master/images/mainwindow.png)
 ### 项目说明
 传统的量化投资，使用技术指标比如均值，MACD，RSI,KDJ等以及它们的线性变种来产生信号。
 有几个缺点：
@@ -73,18 +70,6 @@ alphago master登顶围棋之巅都过去五年之久了，算法、算力日新
 
 难，才有意思。
 
-### “积木式”回测引擎
-
-algo_list_rolling = [
-
-        SelectFix(instruments=['sh000300', 'sh000905', 'sz399006']),
-
-        SelectBySignal(signal_buy='to_buy', signal_sell='to_sell'),
-
-        SelectTopK(K=1,col='五日动量'),
-
-        WeightEqually()
-    ]
 
 ### 开发环境与安装部署
 
@@ -102,13 +87,5 @@ python main.py
 
 ### 联系我们
 
-
-持续分享我的 七年实现财务自由 实盘及逻辑。
-投资理财前沿观察与思考。
-
-![WAI](https://gitee.com/ailabx/ailabx/raw/master/images/weixin.jpg)
-
-
-持续分享前沿**人工智能技术如何赋能金融投资**，并找到一帮志同道合的朋友！
-
-![WAI](https://gitee.com/ailabx/ailabx/raw/master/images/xingqiu.png)
+小鹅通店铺，体系化量化教学：
+https://apppqnqmjzx1479.h5.xet.citv.cn/
