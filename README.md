@@ -42,7 +42,7 @@ No man is better than a machine, but no machine is better than a man with a mach
 
 ## 我们在做什么？
 
-**智能驱动** 引入Openclawy智能体技术，可以轻松扩展各种投资skills。
+**智能驱动** 引入Openclaw智能体技术，可以轻松扩展各种投资skills。
 - 市场智能分析
 - 因子挖掘
 - 策略构建
@@ -89,5 +89,7 @@ python main.py
 
 小鹅通店铺，体系化量化教学：
 ![店铺](./images/store.png)
+
+![test](./images/test.png)
 
 https://apppqnqmjzx1479.h5.xet.citv.cn/
