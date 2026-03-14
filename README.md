@@ -88,9 +88,7 @@ python main.py
 ### 联系我们
 
 小鹅通店铺，体系化量化教学：
-![image](images/store.png)
-
-![image](images/test.png)
+![image](https://yx-prod-resources-shared-1254112465.cos.ap-beijing.myqcloud.com/1/d7a3625afae20e47a34bfe5d024f69ed-6110)
 
 https://apppqnqmjzx1479.h5.xet.citv.cn/
 
