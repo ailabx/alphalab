@@ -89,4 +89,5 @@ python main.py
 
 小鹅通店铺，体系化量化教学：
 ![店铺](./images/store.png)
+
 https://apppqnqmjzx1479.h5.xet.citv.cn/
