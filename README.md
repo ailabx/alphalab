@@ -88,7 +88,7 @@ python main.py
 ### 联系我们
 
 小鹅通店铺，体系化量化教学：
-![image](http://ailabx.com/static/images/xingqiu.jpg)
+![image](http://ailabx.com/static/images/store.png)
 
 https://apppqnqmjzx1479.h5.xet.citv.cn/
 
