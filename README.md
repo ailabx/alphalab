@@ -1,4 +1,7 @@
-# ailabx
+# AlphaLab (AlphaClaw)
+
+AlphaLab, Alpha实验室。
+以 A
 
 AI量化投资实验室，专注将前沿人工智能技术(机器学习、深度学习、强化学习、遗传算法、图计算、知识图谱等)应用于金融量化投资。
 
@@ -60,13 +63,13 @@ algo_list_rolling = [
 
 ### 开发环境与安装部署
 
-python3.7
+python3.11
 
 直接git或者下载源码包，安装相关依赖，然后运行main.py即可。
 
-git clone https://github.com/ailabx/ailabx.git
+git clone https://github.com/ailabx/alphalab.git
 
-cd ailabx
+cd alphalab
 
 pip install -r requirements.txt
 
@@ -74,13 +77,12 @@ python main.py
 
 ### 联系我们
 
-也可以关注微信公众号：**七年实现财富自由**(ailabx)。
+
 持续分享我的 七年实现财务自由 实盘及逻辑。
 投资理财前沿观察与思考。
 
 ![WAI](https://gitee.com/ailabx/ailabx/raw/master/images/weixin.jpg)
 
-有任何问题，可以到**知识星球**——**AI量化投资实验室** 找我，每天都在。
 
 持续分享前沿**人工智能技术如何赋能金融投资**，并找到一帮志同道合的朋友！
 
