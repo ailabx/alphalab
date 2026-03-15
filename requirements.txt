@@ -1,1 +1,8 @@
 backtrader
+loguru
+tiktoken
+openai>=2.8.0
+json-repair>=0.57.0,<1.0.0
+pydantic
+pydantic-settings
+asyncio
