@@ -6,3 +6,8 @@ json-repair>=0.57.0,<1.0.0
 pydantic
 pydantic-settings
 asyncio
+matplotlib
+scipy
+empyrical
+statsmodels
+#agentscope

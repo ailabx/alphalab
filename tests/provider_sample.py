@@ -1,3 +1,5 @@
+import datetime
+
 from nanobot.config import load_config
 from nanobot.providers.custom_provider import CustomProvider
 config = load_config()
@@ -12,11 +14,14 @@ async def main():
     messages = [
         {
             "role": "user",
-            "content": "你好，请问今天天气怎么样？"
+            "content": "中国首都是哪里？"
         }
     ]
-
+    import time
+    start = time.perf_counter()
     resp = await provider.chat(messages=messages)
+    elapsed = time.perf_counter() - start
+    print(f"chat 耗时: {elapsed:.3f} 秒")
 
     print(resp)
     print(f"回复内容: {resp.content}")
