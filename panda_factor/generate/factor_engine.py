@@ -27,7 +27,7 @@ class FactorEngine:
     }
 
     # 基础价格字段
-    _BASE_COLUMNS = ['open', 'high', 'low', 'close', 'volume']
+    _BASE_COLUMNS = ['open', 'high', 'low', 'close', 'volume','cb_over_rate']
 
     def __init__(self, safe_mode: bool = True):
         """
@@ -189,6 +189,8 @@ class FactorEngine:
             计算结果Series或Series列表
         """
         try:
+            if expr in df.columns:
+                return df[expr]
             # 输入验证
             self._validate_dataframe(df)
             if not expr or not isinstance(expr, str):

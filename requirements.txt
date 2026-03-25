@@ -10,4 +10,8 @@ matplotlib
 scipy
 empyrical
 statsmodels
+pandas_datareader==0.8.1
+IPython
+seaborn
+ffn
 #agentscope

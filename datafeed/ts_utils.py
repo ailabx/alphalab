@@ -1,4 +1,5 @@
 # 导入tushare
+import pandas as pd
 import tushare as ts
 from config import Config
 
@@ -36,7 +37,7 @@ def get_bond_list():
     df.rename(columns={'ts_code': 'symbol'}, inplace=True)
     return df
 
-def get_bond_daily(symbol,start_date='20100101'):
+def get_bond_daily(symbol,start_date='20200101'):
     # 拉取数据
     df = pro.cb_daily(**{
         "ts_code": symbol,
@@ -63,6 +64,46 @@ def get_bond_daily(symbol,start_date='20100101'):
     df.rename(columns={'trade_date':'date', 'ts_code': 'symbol'}, inplace=True)
     df['id'] =  df['symbol'] + '_' + df['date']
     return df
+
+def get_etf_daily(symbol, start_date='20200101'):
+    df = pro.fund_daily(**{
+        "trade_date": "",
+        "start_date": start_date,
+        "end_date": "",
+        "ts_code": symbol,
+        "limit": "",
+        "offset": ""
+    }, fields=[
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+    ])
+    df_factor = pro.fund_adj(**{
+        "ts_code": symbol,
+        "trade_date": "",
+        "start_date": start_date,
+        "end_date": "",
+        "offset": "",
+        "limit": ""
+    }, fields=[
+        "trade_date",
+        "adj_factor"
+    ])
+    all = pd.merge(df, df_factor, on='trade_date', how='inner')
+
+    if all is None and len(all) == 0:
+        return pd.DataFrame()
+
+    for col in ['open', 'high', 'close', 'low']:
+        all[col] *= all['adj_factor']
+
+    all.rename(columns={'ts_code':'symbol', 'trade_date':'date', 'vol':'volume'}, inplace=True)
+    return all
 
 
 if __name__ == '__main__':
